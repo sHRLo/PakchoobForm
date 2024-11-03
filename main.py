@@ -1,5 +1,4 @@
 import streamlit as st
-import pyodbc
 from Pages.Operator import operator_screen
 from Pages.Technisian import technisian_screen
 
@@ -10,15 +9,15 @@ st.set_page_config(page_title='EM-GM-CM-PM Forms',
                    
                    )
 
-# Database connection
-conn = pyodbc.connect(
-    'DRIVER={ODBC Driver 17 for SQL Server};'
-    'SERVER=10.0.1.7\\bi;'
-    'DATABASE=PM;'
-    'UID=Reza;'
-    'PWD=Re@123456'
-)
-cursor = conn.cursor()
+# # Database connection
+# conn = pyodbc.connect(
+#     'DRIVER={ODBC Driver 17 for SQL Server};'
+#     'SERVER=10.0.1.7\\bi;'
+#     'DATABASE=PM;'
+#     'UID=Reza;'
+#     'PWD=Re@123456'
+# )
+# cursor = conn.cursor()
 
 # Function to authenticate user
 def authenticate(username, password):
