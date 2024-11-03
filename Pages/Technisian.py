@@ -1,5 +1,4 @@
 import streamlit as st
-from setuptools.command.editable_wheel import editable_wheel
 from forms.aghlam import aghlam_form
 from Pages.Operator import operator_screen
 from forms.tech import tech_form
