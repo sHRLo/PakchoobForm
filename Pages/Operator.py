@@ -34,8 +34,8 @@ def operator_screen():
                                                     ],index = None)
     container_operator.subheader('تعیین زمان بروز اشکال')
     if container_operator.selectbox('وضعیت توقف',options=['ندارد','دارد']) == 'ندارد':
-        container_operator.date_input('زمان شروع توقف',key='stop',disabled=True)
-        container_operator.date_input('زمان پایان توقف',key='start',disabled=True)
+        container_operator.date_input('زمان شروع توقف',key='stop_disable',disabled=True)
+        container_operator.date_input('زمان پایان توقف',key='start_disable',disabled=True)
     else:
         container_operator.date_input('زمان شروع توقف',key='stop',disabled=False)
         container_operator.date_input('زمان پایان توقف',key='start',disabled=False)
