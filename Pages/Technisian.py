@@ -35,9 +35,9 @@ def operator_screen(read_only=False):
                                                         'تولید',
                                                         'تاسیسات',
                                                         'فلزکاری',
-                                                        ], disabled=True)
+                                                        ],key='problem_type_disable', disabled=True)
         container_operator.subheader('تعیین زمان بروز اشکال')
-        container_operator.selectbox('وضعیت توقف',options=['ندارد','دارد'],disabled=True)
+        container_operator.selectbox('وضعیت توقف',options=['ندارد','دارد'],disabled=True,key='stop_status_disable')
         container_operator.date_input('زمان شروع توقف',key='stop',format="YYYY/MM/DD",disabled=True)
         container_operator.date_input('زمان پایان توقف',key='start',disabled=True)
     else:
