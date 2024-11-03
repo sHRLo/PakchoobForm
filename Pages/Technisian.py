@@ -22,13 +22,13 @@ def operator_screen(read_only=False):
                                                         'Steam Boiler',
                                                         'General'
                                                         ],key='section_name_disable',disabled=True)
-        container_operator.text_input('مشخصات دستگاه',key='machine_name',disabled=True)
+        container_operator.text_input('مشخصات دستگاه',key='machine_name_disable',disabled=True)
         container_operator.selectbox('شیفت',options=[
                                                 'A',
                                                 'B',
                                                 'C'
-                                                ],key='shift',disabled=True)
-        container_operator.text_input('نام درخواست کننده',key='operator',disabled=True)
+                                                ],key='shift_disable',disabled=True)
+        container_operator.text_input('نام درخواست کننده',key='operator_disable',disabled=True)
         container_operator.selectbox('نوع عیب',options=[
                                                         'مکانیکی',
                                                         'برقی',
