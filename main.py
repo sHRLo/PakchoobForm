@@ -61,11 +61,12 @@ def technician_page():
 
 # Initialize session state
 if 'role' not in st.session_state:
+    login_page()
     st.session_state.role = None
 
 # Streamlit app
 if st.session_state.role is None:
-    login_page()
+
     if st.session_state.role == 'admin':
         admin_page()
     elif st.session_state.role == 'operator':
