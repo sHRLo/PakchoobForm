@@ -8,7 +8,7 @@ def operator_screen(read_only=False):
     if read_only:
         container_operator = st.container(height=None,border=True,key=None)
         container_operator.subheader('این قسمت توسط اپراتور انجام شده است')
-        container_operator.text_input('شماره درخواست',key='form_code',disabled=True)
+        container_operator.text_input('شماره درخواست',key='form_code_disable',disabled=True)
         container_operator.selectbox('نام واحد',options=['Chipper',
                                                         'Conveyor Line',
                                                         'Energy Plant',
