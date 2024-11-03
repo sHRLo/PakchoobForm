@@ -67,7 +67,7 @@ def technisian_screen():
         index = None) == 'سایر مشکلات':
         container_technisian.text_area('توضیحات سایر مشکلات')
     else:
-        container_technisian.success
+        container_technisian.success('Everything Fine')
             
     container_technisian.subheader('زمان های انجام کار')
     container_technisian.text_input('مدت تشخیص عیب',key='problem_time')
