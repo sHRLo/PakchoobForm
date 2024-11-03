@@ -2,9 +2,6 @@ import streamlit as st
 from Pages.Operator import operator_screen
 from Pages.Technisian import technisian_screen
 
-
-st.set_page_config(page_title='EM-GM-CM-PM Forms',page_icon=':bar_chart:',layout='centered')
-
 # # Database connection
 # conn = pyodbc.connect(
 #     'DRIVER={ODBC Driver 17 for SQL Server};'
