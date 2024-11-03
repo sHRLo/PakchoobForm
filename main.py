@@ -16,13 +16,13 @@ st.set_page_config(page_title='EM-GM-CM-PM Forms',page_icon=':bar_chart:',layout
 # cursor = conn.cursor()
 
 # Function to authenticate user
-def authenticate(username, password):
-    cursor.execute('SELECT username, password, role FROM dbo.Login WHERE username = ? AND password = ?',
-    (username, password))
-    user = cursor.fetchone()
-    if user:
-        return user[2]  # Return the role of the user
-    return None
+# def authenticate(username, password):
+#     cursor.execute('SELECT username, password, role FROM dbo.Login WHERE username = ? AND password = ?',
+#     (username, password))
+#     user = cursor.fetchone()
+#     if user:
+#         return user[2]  # Return the role of the user
+#     return None
 
 def login_page():
     st.markdown("<h1 style='text-align: center; color: white;'>Login Page</h1>", unsafe_allow_html=True)
