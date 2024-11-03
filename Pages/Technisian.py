@@ -21,7 +21,7 @@ def operator_screen(read_only=False):
                                                         'Cooling System'
                                                         'Steam Boiler',
                                                         'General'
-                                                        ],key='section_name',disabled=True)
+                                                        ],key='section_name_disable',disabled=True)
         container_operator.text_input('مشخصات دستگاه',key='machine_name',disabled=True)
         container_operator.selectbox('شیفت',options=[
                                                 'A',
